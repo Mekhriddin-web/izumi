@@ -19,7 +19,7 @@ $(document).ready(function() {
 	$(".intro__slider").slick({
 		arrows: false,
 		infinite: true,
-		// autoplay: true,
+		autoplay: true,
 		fade: true,
 		autoplaySpeed: 2000,
 		speed: 1000,
