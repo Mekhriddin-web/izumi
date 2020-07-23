@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Izumi</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+<body>
+
+	<svg display="none">
+		<symbol id="intro_img" viewBox="0 0 71 93">
+			<g>
+				<path d="M26.8744 80.9375C26.0728 80.9375 25.4194 80.2936 25.4194 79.5C25.4194 78.7064 26.0698 78.0625 26.8744 78.0625H43.7533C44.5549 78.0625 45.2052 78.7064 45.2052 79.5C45.2052 80.2936 44.5549 80.9375 43.7533 80.9375H26.8744Z" fill="#FFF55A"/>
+				<path d="M28.7498 86.6426C27.9482 86.6426 27.2979 85.9987 27.2979 85.2051C27.2979 84.4115 27.9513 83.7676 28.7498 83.7676H41.8778C42.6794 83.7676 43.3297 84.4115 43.3297 85.2051C43.3297 85.9987 42.6794 86.6426 41.8778 86.6426H28.7498Z" fill="#FFF55A"/>
+				<path d="M33.9467 66.7691C33.9467 67.5599 33.2994 68.2006 32.5009 68.2006C31.7023 68.2006 31.055 67.5596 31.055 66.7691C31.0489 60.7167 30.8735 56.1946 30.0296 52.0078C29.1948 47.8691 27.7004 44.0327 25.0477 39.3009C24.6605 38.6091 24.9116 37.7376 25.6073 37.3542C26.3062 36.9709 27.1864 37.2195 27.5766 37.9083C30.3927 42.9336 31.9868 47.0246 32.8761 51.4479C33.7562 55.8143 33.9407 60.5041 33.9467 66.7691Z" fill="#FFF55A"/>
+				<path d="M39.5733 66.7691C39.5733 67.5598 38.9259 68.2005 38.1275 68.2005C37.3291 68.2005 36.6816 67.5596 36.6816 66.7691C36.6879 60.5038 36.8722 55.8171 37.7524 51.4478C38.6417 47.0245 40.2359 42.9338 43.052 37.9083C43.4393 37.2165 44.3224 36.9679 45.0183 37.3542C45.7171 37.7375 45.9649 38.612 45.5779 39.3008C42.9252 44.0325 41.4309 47.872 40.596 52.0077C39.7548 56.1945 39.5765 60.7167 39.5733 66.7691Z" fill="#FFF55A"/>
+				<path d="M25.8707 39.9688C25.1084 39.7291 24.6909 38.9206 24.933 38.1658C25.178 37.4111 25.9916 36.9978 26.754 37.2375C27.7643 37.561 28.6386 37.9952 29.4461 38.3965L29.5247 38.4385C30.786 39.0674 31.8358 39.5585 32.6161 38.9296L34.4008 37.4891C35.0209 36.992 35.9346 37.0848 36.4365 37.6987C36.9387 38.3127 36.8449 39.2171 36.2248 39.7143L34.4401 41.1548C32.2168 42.9456 30.3988 42.0742 28.2089 40.987L28.1424 40.9571C27.4345 40.6036 26.6661 40.2233 25.8707 39.9688Z" fill="#FFF55A"/>
+				<path  d="M36.7661 7.35252C36.7661 8.14614 36.1157 8.79002 35.314 8.79002C34.5124 8.79002 33.8621 8.14614 33.8621 7.35252V1.78223C33.8621 0.98861 34.5124 0.344727 35.314 0.344727C36.1159 0.344727 36.7661 0.98861 36.7661 1.78223V7.35252Z" fill="#FFF55A"/>
+				<path d="M43.8748 37.2376C44.6371 36.995 45.4538 37.4113 45.6959 38.1659C45.9409 38.9206 45.5205 39.7292 44.7582 39.9689C43.9628 40.2234 43.1945 40.6067 42.4834 40.9602L42.417 40.9902C40.2299 42.0772 38.4091 42.9518 36.1858 41.1578L34.4012 39.7174C33.7811 39.2202 33.6873 38.3158 34.1894 37.7019C34.6916 37.088 35.6051 36.9951 36.2253 37.4922L38.0099 38.9327C38.7904 39.5616 39.837 39.0675 41.1014 38.4416L41.1803 38.3996C41.9903 37.9953 42.8644 37.5611 43.8748 37.2376Z" fill="#FFF55A"/>
+				<path d="M53.5816 22.6889C58.255 27.3159 61.1498 33.7128 61.1498 40.7745C61.1498 43.5358 60.7022 46.204 59.8794 48.7048C59.0295 51.2893 57.7681 53.7001 56.18 55.8505C53.5152 59.4592 51.3524 61.8281 49.6736 63.6697C46.6517 66.9789 45.3268 68.4286 45.3268 73.2681C45.3268 74.0618 44.6765 74.7056 43.8749 74.7056H43.8384H35.3778H26.878C26.0764 74.7056 25.423 74.0618 25.423 73.2681C25.423 68.4765 24.0709 67.012 21.0702 63.7566L21.0672 63.7537L21.0641 63.7566C19.3672 61.9179 17.1833 59.5489 14.4517 55.8504C12.8637 53.7 11.6023 51.2863 10.7524 48.7018C9.92954 46.2041 9.48193 43.5327 9.48193 40.7746C9.48193 37.3187 10.1807 34.0124 11.4451 30.9936L11.4723 30.9366C12.7851 27.822 14.6968 25.0189 17.0531 22.689C19.4247 20.3412 22.2711 18.4424 25.4412 17.1427V17.1397C28.4902 15.8879 31.8297 15.196 35.3205 15.196C38.8053 15.196 42.1416 15.8879 45.1938 17.1397C48.3576 18.4394 51.21 20.3411 53.5816 22.6889ZM58.2429 40.7745C58.2429 34.5064 55.6746 28.8313 51.5277 24.7223C49.4075 22.623 46.8815 20.934 44.0865 19.7899C41.3944 18.6848 38.43 18.0739 35.3142 18.0739C32.2016 18.0739 29.2373 18.6848 26.5482 19.7899V19.787L26.5421 19.7899C23.7471 20.934 21.2244 22.623 19.1039 24.7223C17.0047 26.8007 15.3078 29.2804 14.1491 32.0176L14.1189 32.0955C13.0058 34.7578 12.3857 37.6927 12.3857 40.7744C12.3857 43.2361 12.7819 45.608 13.5079 47.815C14.2672 50.1119 15.3833 52.2504 16.7869 54.155C19.4096 57.7068 21.545 60.0219 23.2057 61.8246L23.2027 61.8275C26.4332 65.3225 28.0394 67.0714 28.2905 71.8331H35.3717H42.453C42.701 67.0385 44.277 65.3075 47.5226 61.7556C49.144 59.9797 51.2281 57.6947 53.8386 54.1608C55.2421 52.2591 56.3584 50.1208 57.1146 47.8239C57.8467 45.6081 58.2429 43.2392 58.2429 40.7745Z" fill="#FFF55A"/>
+				<path d="M30.6258 92.3447C29.8242 92.3447 29.1738 91.7008 29.1738 90.9072C29.1738 90.1136 29.8242 89.4697 30.6258 89.4697H40.003C40.8046 89.4697 41.4549 90.1136 41.4549 90.9072C41.4549 91.7008 40.8046 92.3447 40.003 92.3447H30.6258Z" fill="#FFF55A"/>
+				<path  d="M53.1273 12.4586C52.7309 13.1414 51.8446 13.378 51.1519 12.9857C50.4622 12.5935 50.2234 11.716 50.6197 11.0302L53.4328 6.20563C53.8291 5.52283 54.7155 5.28621 55.4081 5.67848C56.1008 6.07076 56.3367 6.94825 55.9405 7.63407L53.1273 12.4586Z" fill="#FFF55A"/>
+				<path  d="M20.0053 11.0331C20.4015 11.7159 20.1657 12.5934 19.4728 12.9858C18.7832 13.3781 17.8969 13.1415 17.5007 12.4587L14.6875 7.634C14.2913 6.95121 14.5302 6.07372 15.2199 5.68144C15.9126 5.28917 16.7989 5.52567 17.1952 6.20847L20.0053 11.0331Z" fill="#FFF55A"/>
+				<path  d="M7.35214 22.5062C8.04179 22.8985 8.28079 23.776 7.88457 24.4618C7.48835 25.1446 6.60194 25.3812 5.91228 24.989L1.03917 22.2038C0.34646 21.8115 0.107579 20.934 0.503797 20.2512C0.900015 19.5654 1.78631 19.3318 2.47902 19.7241L7.35214 22.5062Z" fill="#FFF55A"/>
+				<path  d="M64.7155 24.9889C64.0228 25.3812 63.1365 25.1447 62.7403 24.4618C62.3439 23.776 62.5829 22.8985 63.2726 22.5062L68.1457 19.721C68.8382 19.3287 69.7245 19.5652 70.1209 20.2481C70.5172 20.9309 70.2783 21.8114 69.5885 22.2037L64.7155 24.9889Z" fill="#FFF55A"/>
+				<path d="M20.2289 46.4555C20.5374 47.1832 20.1926 48.0247 19.4576 48.3302C18.7225 48.6357 17.8726 48.2942 17.564 47.5666C17.0709 46.4108 16.6867 45.1919 16.4326 43.9341C16.1815 42.6913 16.0454 41.4215 16.0454 40.1457C16.0454 39.3521 16.6988 38.7082 17.4973 38.7082C18.2989 38.7082 18.9493 39.3551 18.9493 40.1457C18.9493 41.2688 19.0612 42.3499 19.2699 43.3741C19.4848 44.44 19.8114 45.4761 20.2289 46.4555ZM20.2289 33.8324C19.9204 34.5602 19.0704 34.9016 18.3353 34.5961C17.6002 34.2906 17.2554 33.449 17.564 32.7214C18.0509 31.5803 18.6468 30.4992 19.3274 29.4959L19.3305 29.4929L19.3274 29.49C20.0262 28.4658 20.8187 27.5134 21.6868 26.6539C22.5459 25.8034 23.5078 25.0187 24.5543 24.321V24.318C25.5586 23.6472 26.6566 23.0572 27.8181 22.5721C28.9827 22.0839 30.2108 21.7035 31.4843 21.4519C32.7396 21.2003 34.0282 21.0686 35.3138 21.0686C36.1156 21.0686 36.7658 21.7125 36.7658 22.5061C36.7658 23.2997 36.1155 23.9436 35.3138 23.9436C34.1764 23.9436 33.0815 24.0544 32.0499 24.2581C30.97 24.4707 29.9264 24.7972 28.9404 25.2103C27.9816 25.6117 27.0559 26.1118 26.1757 26.6987H26.1726C25.3166 27.2677 24.4999 27.9385 23.7437 28.6873C22.9965 29.427 22.319 30.2386 21.7351 31.0981L21.7321 31.0951C21.1424 31.9607 20.6372 32.8771 20.2289 33.8324Z" fill="#FFF55A"/>
+			</g>
+		</symbol>	
+	</svg>
+
+	<svg display="none">
+		<symbol id="zoom" viewBox="0 0 30 30">
+			<g>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M24.3259 22.5385C23.9698 22.1795 23.6137 22.1795 23.2576 22.1795L22.7234 21.641C24.682 19.3077 25.7504 16.4359 25.7504 13.3846C25.7504 9.97436 24.504 6.92308 22.1892 4.58974C19.8744 2.25641 16.6693 1 13.4642 1C10.0811 1 7.05405 2.25641 4.73927 4.58974C2.42448 6.92308 1 10.1538 1 13.3846C1 16.7949 2.24642 19.8462 4.73927 22.1795C7.05405 24.5128 10.2591 25.7692 13.4642 25.7692C16.4913 25.7692 19.3402 24.6923 21.655 22.7179L22.1892 23.2564C22.1892 23.6154 22.1892 23.9744 22.5453 24.3333L26.8188 28.641C26.9968 28.8205 27.3529 29 27.7091 29C28.0652 29 28.4213 28.8205 28.5994 28.641C29.1335 28.1026 29.1335 27.3846 28.5994 26.8462L24.3259 22.5385ZM20.4086 20.2051C18.628 22.1795 16.1351 23.0769 13.4642 23.0769C10.7933 23.0769 8.30047 22 6.51987 20.2051C4.73927 18.4103 3.67091 15.8974 3.67091 13.2051C3.67091 10.5128 4.73927 8 6.51987 6.20513C8.30047 4.23077 10.7933 3.33334 13.4642 3.33334C16.1351 3.33334 18.628 4.41026 20.4086 6.20513C22.1892 8 23.2576 10.5128 23.2576 13.2051C23.2576 15.8974 22.1892 18.4103 20.4086 20.2051Z" stroke-width="0.5669" stroke-miterlimit="22.9256"/>
+			</g>
+		</symbol>	
+	</svg>
+
+	<svg display="none">
+		<symbol id="facebook" viewBox="0 0 39 38">
+			<g>
+				<path d="M19.6743 0.763184C9.17646 0.763184 0.635742 9.0804 0.635742 19.3035C0.635742 29.5258 9.17646 37.8438 19.6743 37.8438C30.1713 37.8438 38.7128 29.5258 38.7128 19.3035C38.7128 9.0804 30.1728 0.763184 19.6743 0.763184ZM24.409 19.9562H21.3115C21.3115 24.7753 21.3115 30.7072 21.3115 30.7072H16.7218C16.7218 30.7072 16.7218 24.8328 16.7218 19.9562H14.54V16.1564H16.7218V13.6987C16.7218 11.9384 17.5807 9.18794 21.3537 9.18794L24.7548 9.20063V12.8891C24.7548 12.8891 22.6881 12.8891 22.2862 12.8891C21.8844 12.8891 21.3131 13.0848 21.3131 13.9242V16.1572H24.81L24.409 19.9562Z"/>
+			</g>
+		</symbol>	
+	</svg>
+
+	<svg display="none">
+		<symbol id="skype" viewBox="0 0 39 38">
+			<g>
+				<path d="M36.896 22.2809C37.1455 21.1223 37.2927 19.889 37.2927 18.6557C37.2927 9.26254 29.4815 1.6633 19.8408 1.6633C18.5741 1.6633 17.3138 1.80656 16.1175 2.04949C14.5054 0.834856 12.4966 0.112305 10.3087 0.112305C5.06292 0.118534 0.795898 4.2732 0.795898 9.38712C0.795898 11.5112 1.53799 13.467 2.77907 15.0305C2.52958 16.1891 2.38244 17.4224 2.38244 18.6557C2.38244 28.0489 10.1936 35.6481 19.8344 35.6481C21.101 35.6481 22.3613 35.5048 23.5576 35.2619C25.1697 36.4703 27.1785 37.1929 29.3536 37.1929C34.6058 37.1929 38.8728 33.0382 38.8728 27.9243C38.8792 25.8002 38.1371 23.8506 36.896 22.2809ZM20.3525 29.8552C14.7741 29.8552 10.1104 27.4384 10.1104 24.4735C10.1104 23.1467 10.8781 21.9383 12.6182 21.9383C15.2731 21.9383 15.5162 25.657 20.1094 25.657C22.2909 25.657 23.7047 24.7164 23.7047 23.4831C23.7047 21.9383 22.3421 21.6954 20.135 21.1659C14.8252 19.889 10.1232 19.3471 10.1232 13.9467C10.1232 9.04453 15.1067 7.23192 19.3993 7.23192C24.0822 7.23192 28.8162 9.04453 28.8162 11.8164C28.8162 13.2179 27.8502 14.4512 26.2381 14.4512C23.8327 14.4512 23.7559 11.6793 19.8599 11.6793C17.6785 11.6793 16.2902 12.2586 16.2902 13.5418C16.2902 15.18 18.0559 15.3482 22.163 16.27C25.6815 17.0424 29.8718 18.4875 29.8718 22.692C29.8782 27.5879 25.0226 29.8552 20.3525 29.8552Z"/>
+			</g>
+		</symbol>	
+	</svg>
+
+	<svg display="none">
+		<symbol id="mail" viewBox="0 0 42 30">
+			<g>
+				<path d="M40.8182 10.0222C41.1266 9.78728 41.5926 10.0092 41.5926 10.3812V25.9012C41.5926 27.9113 39.8794 29.543 37.7686 29.543H4.61995C2.50918 29.543 0.795898 27.9113 0.795898 25.9012V10.3877C0.795898 10.0092 1.24821 9.79381 1.5703 10.0288C3.35212 11.3471 5.72331 13.0244 13.8511 18.6503C15.5301 19.8185 18.3673 22.279 21.1977 22.2594C24.0417 22.279 26.9338 19.7728 28.5511 18.6503C36.6721 13.0309 39.0364 11.3471 40.8182 10.0222ZM21.1908 19.8315C23.0412 19.8642 25.7002 17.6191 27.0366 16.6923C37.611 9.38264 38.4128 8.74957 40.8525 6.92868C41.3117 6.5893 41.5858 6.05413 41.5858 5.49285V4.05049C41.5858 2.04033 39.8725 0.408711 37.7617 0.408711H4.61995C2.50918 0.402184 0.795898 2.03381 0.795898 4.04397V5.48632C0.795898 6.0476 1.07002 6.56972 1.52918 6.92215C3.9689 8.73651 4.77072 9.38264 15.3451 16.6858C16.6815 17.6125 19.3473 19.8577 21.1908 19.8315Z"/>
+			</g>
+		</symbol>	
+	</svg>
+
+	<svg display="none">
+		<symbol id="footer-icon-01" viewBox="0 0 39 38">
+			<g>
+				<path d="M26.1108 17.4526H14.671L14.0001 13.6979L15.6454 13.1194C16.8019 12.7129 17.5789 11.6331 17.5789 10.4327V9.12031C17.5789 4.52586 21.4063 0.788086 26.1108 0.788086C30.8153 0.788086 34.6427 4.52586 34.6427 9.12031C34.6427 13.7148 30.8152 17.4526 26.1108 17.4526ZM20.7342 13.5836H26.1108C28.6307 13.5836 30.6809 11.5814 30.6809 9.12041C30.6809 6.65942 28.6307 4.65721 26.1108 4.65721C23.5909 4.65721 21.5407 6.65942 21.5407 9.12041V10.4328C21.5406 11.555 21.2524 12.6324 20.7342 13.5836Z"/>
+				<path d="M30.2291 16.935H29.0706C28.1481 17.2694 27.1511 17.4527 26.1108 17.4527H21.6973V21.2041H17.7478V13.3895C17.7478 8.79502 13.9205 5.05713 9.21598 5.05713C4.51151 5.05713 0.684113 8.79491 0.684113 13.3895C0.684113 17.984 4.51151 21.7218 9.21598 21.7218H10.3744C7.12463 22.8996 4.80252 25.9578 4.80252 29.5364C4.80252 34.1309 8.62981 37.8687 13.3344 37.8687C18.0389 37.8687 21.8663 34.1309 21.8663 29.5364V28.224C21.8663 27.9468 21.9094 27.6767 21.9874 27.4191C22.9614 30.9737 26.2866 33.5996 30.2292 33.5996C34.9337 33.5996 38.7611 29.8617 38.7611 25.2672C38.761 20.6728 34.9335 16.935 30.2291 16.935ZM4.64579 13.3895C4.64579 10.9285 6.69594 8.92626 9.21587 8.92626C11.7358 8.92626 13.786 10.9285 13.786 13.3895V18.6404C12.812 18.1343 11.7088 17.8527 10.5596 17.8527H9.21577C6.69594 17.8527 4.64579 15.8505 4.64579 13.3895ZM17.9044 28.224V29.5364C17.9044 31.9974 15.8542 33.9996 13.3343 33.9996C10.8144 33.9996 8.7642 31.9974 8.7642 29.5364C8.7642 27.0754 10.8144 25.0732 13.3343 25.0732H18.7109C18.1927 26.0243 17.9044 27.1018 17.9044 28.224ZM30.2291 29.7305C27.7092 29.7305 25.659 27.7283 25.659 25.2673V20.0164C26.633 20.5225 27.7362 20.804 28.8854 20.804H30.2292C32.7491 20.804 34.7993 22.8062 34.7993 25.2672C34.7992 27.7283 32.749 29.7305 30.2291 29.7305Z"/>
+			</g>
+		</symbol>	
+	</svg>
+
+	<svg display="none">
+		<symbol id="footer-icon-02" viewBox="0 0 39 38">
+			<g>
+				<path d="M38.5955 19.9967C38.0172 18.2609 36.1038 17.313 34.3213 17.8761L30.9038 18.9585C30.147 16.6872 29.3402 14.2723 28.5834 12.0057C30.6611 11.3475 32.0009 10.9234 32.0009 10.9234C33.7834 10.3602 34.7568 8.49686 34.1785 6.76098C33.6002 5.02511 31.6868 4.07721 29.9043 4.64039L26.4868 5.7227C25.8109 3.69944 25.3754 2.39464 25.3754 2.39464C24.7995 0.661085 22.886 -0.289127 21.1035 0.274047C19.321 0.837222 18.3476 2.70056 18.9259 4.43644L20.0373 7.7645L12.8977 10.0241C12.2242 8.00089 11.7887 6.69609 11.7887 6.69609C11.208 4.96021 9.29463 4.01 7.51449 4.57549C5.73197 5.13867 4.75623 7.00201 5.33692 8.73557L6.44831 12.0659L2.92135 13.183C1.25545 13.7694 0.320161 15.5192 0.817553 17.2017C1.33636 18.9538 3.2474 20.0222 5.01563 19.4637C5.02991 19.4591 6.41737 19.021 8.54259 18.3466L10.863 25.2994L7.336 26.4165C5.67248 27.0028 4.73719 28.7526 5.2322 30.4352C5.75101 32.1873 7.66204 33.258 9.43028 32.6971C9.44456 32.6925 10.832 32.2545 12.9596 31.58L14.1067 35.0147C14.7088 36.6347 16.5056 37.5455 18.2334 37.0635C20.0326 36.5582 21.1321 34.6972 20.5562 32.9752C20.5514 32.9613 20.1016 31.6125 19.4114 29.5406C21.7437 28.8036 24.2235 28.0179 26.551 27.2809L27.6981 30.7156C28.3002 32.3356 30.097 33.2464 31.8248 32.7643C33.624 32.2591 34.7235 30.3981 34.1476 28.6761C34.1428 28.6622 33.693 27.3134 33.0005 25.2414C35.0781 24.5832 36.4179 24.1591 36.4179 24.1591C38.1981 23.596 39.1738 21.7326 38.5955 19.9967ZM17.3148 23.2599C16.5556 20.9887 15.7512 18.5737 14.9944 16.3071C17.3267 15.5701 19.8065 14.7845 22.134 14.0475L24.4544 21.0003L17.3148 23.2599Z"/>
+			</g>
+		</symbol>	
+	</svg>
+
+	<header class="header" id="header">
+		<div class="header__inner">
+			<a href="#" class="logo">
+				<img src="img/logo.svg" alt="" />
+			</a>
+			<button class="header__burger">
+				<span></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__menu">
+					<li>
+						<a href="#" class="nav__menu-link" data-scroll="#intro">Главная</a>
+					</li>
+					<li>
+						<a href="#" class="nav__menu-link" data-scroll="#services">Наши услуги</a>
+					</li>
+					<li>
+						<a href="#" class="nav__menu-link" data-scroll="#redesign">Редизайн сайта</a>
+					</li>
+					<li>
+						<a href="#" class="nav__menu-link" data-scroll="#about">О нас</a>
+					</li>
+					<li>
+						<a href="#" class="nav__menu-link" data-scroll="#works">Наши работы</a>
+					</li>
+					<li>
+						<a href="#" class="nav__menu-link" data-scroll="#form">Связаться с нами</a>
+					</li>
+				</ul>
+				<!-- /.nav__menu -->
+			</nav>
+			<!-- /.nav -->
+		</div>
+		<!-- /.header__inner -->
+	</header>
+	<!-- /.header -->
+
+	<section class="intro" id="intro">
+		<div class="intro__slider">
+			<div class="intro__slider-item" style="background-image: url(../img/intro-bg.jpg);">
+				<div class="intro__item-content">
+					<h1 class="intro__content-title wow fadeInUp" data-wow-delay="0.2s">создание и поддержка <br /> интернет-проектов</h1>
+					<h2 class="intro__content-subtitle wow fadeInUp" data-wow-delay="0.4s">разработка и дизайн сайтов и приложений</h2>
+					<svg class="intro__content-img">
+						<use xlink:href="#intro_img"></use>
+					</svg>
+					<p class="intro__content-text wow fadeInUp" data-wow-delay="0.6s">Вы приходите с идеей, а мы думаем, в каком виде и какими средствами ее лучше воплотить. <br /> Мы делаем для вас работающий бизнес в интернете</p>
+					<a href="" class="intro__content-btn wow fadeInUp" data-wow-delay="0.8s" data-scroll="#works">посмотреть работы</a>
+				</div>
+			</div>
+			<div class="intro__slider-item" style="background-image: url(../img/intro-bg.jpg);">
+				<div class="intro__item-content">
+					<h1 class="intro__content-title">создание и поддержка <br /> интернет-проектов</h1>
+					<h2 class="intro__content-subtitle">разработка и дизайн сайтов и приложений</h2>
+					<svg class="intro__content-img">
+						<use xlink:href="#intro_img"></use>
+					</svg>
+					<p class="intro__content-text">Вы приходите с идеей, а мы думаем, в каком виде и какими средствами ее лучше воплотить. <br /> Мы делаем для вас работающий бизнес в интернете Вы приходите с идеей, а мы думаем, в каком виде и какими средствами ее лучше воплотить. <br /> Мы делаем для вас работающий бизнес в интернете</p>
+					<a href="" class="intro__content-btn" data-scroll="#works">посмотреть работы</a>
+				</div>
+			</div>
+			<div class="intro__slider-item" style="background-image: url(../img/intro-bg.jpg);">
+				<div class="intro__item-content">
+					<h1 class="intro__content-title">создание и поддержка <br /> интернет-проектов</h1>
+					<h2 class="intro__content-subtitle">разработка и дизайн сайтов и приложений</h2>
+					<svg class="intro__content-img">
+						<use xlink:href="#intro_img"></use>
+					</svg>
+					<p class="intro__content-text">Вы приходите с идеей, а мы думаем, в каком виде и какими средствами ее лучше воплотить. <br /> Мы делаем для вас работающий бизнес в интернете Вы приходите с идеей, а мы думаем, в каком виде и какими средствами ее лучше воплотить. <br /> Мы делаем для вас работающий бизнес в интернете</p>
+					<a href="" class="intro__content-btn" data-scroll="#works">посмотреть работы</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.intro__slider -->
+	</section>
+	<!-- /.intro -->
+
+	<main class="services" id="services">
+		<div class="container">
+			<h3 class="services__title wow fadeInUp" data-wow-offset="150">наши услуги</h3>
+			<div class="services__inner">
+				<div class="services__item wow fadeInLeft" data-wow-delay="0.2s">
+					<div class="services__item-header">
+						<svg class="services__header-icon">
+							<use xlink:href="#zoom"></use>
+						</svg>
+						<h4 class="services__header-title">Анализ и проектирование</h4>
+					</div>
+					<!-- /.services__item-header -->
+					<ul class="services__item-body">
+						<li class="services__body-list">концепция проекта, строение бизнес-модели;</li>
+						<li class="services__body-list">техническое задание;</li>
+						<li class="services__body-list">проектирование интерфейса</li>
+					</ul>
+					<!-- /.services__item-body -->
+				</div>
+				<!-- /.services__item -->
+
+				<div class="services__item wow fadeInLeft"  data-wow-delay="0.4s">
+					<div class="services__item-header">
+						<img src="img/design-icon.svg" alt="" class="services__header-icon" />
+						<h4 class="services__header-title">Дизайн</h4>
+					</div>
+					<!-- /.services__item-header -->
+					<ul class="services__item-body">
+						<span class="services__body-descr">Дизайн сайта:</span>
+						<li class="services__body-list">лендинг</li>
+						<li class="services__body-list">промо-сайт</li>
+						<li class="services__body-list">корпоративный сайт</li>
+						<li class="services__body-list">интернет-магазин</li>
+						<p class="services__body-text">Редизайн существующего сайта</p>
+						<a href="#" class="services__body-btn">подробнее</a>
+					</ul>
+					<!-- /.services__item-body -->
+				</div>
+				<!-- /.services__item -->
+
+				<div class="services__item wow fadeInLeft"  data-wow-delay="0.6s">
+					<div class="services__item-header">
+						<img src="img/development-icon.svg" alt="" class="services__header-icon" />
+						<h4 class="services__header-title">Разработка</h4>
+					</div>
+					<!-- /.services__item-header -->
+					<ul class="services__item-body">
+						<li class="services__body-list">back-end на php-фреймворке Symfony;</li>
+						<li class="services__body-list">CMS  WordPress, Opencart;</li>
+						<li class="services__body-list">проектирование интерфейса</li>
+						<li class="services__body-list">интеграция со сторонними сервисами;</li>
+						<li class="services__body-list">ручное и автоматическое тестирование</li>
+					</ul>
+					<!-- /.services__item-body -->
+				</div>
+				<!-- /.services__item -->
+
+				<div class="services__item wow fadeInLeft"  data-wow-delay="0.8s">
+					<div class="services__item-header">
+						<img src="img/support-icon.svg" alt="" class="services__header-icon" />
+						<h4 class="services__header-title">Поддержка</h4>
+					</div>
+					<!-- /.services__item-header -->
+					<ul class="services__item-body">
+						<li class="services__body-list">обеспечение стабильной работы и качества;</li>
+						<li class="services__body-list">обновление контента;</li>
+						<li class="services__body-list">оптимизация</li>
+						<li class="services__body-list">консалтинг</li>
+					</ul>
+					<!-- /.services__item-body -->
+				</div>
+				<!-- /.services__item -->
+			</div>
+			<!-- /.services__inner -->
+		</div>
+		<!-- /.container -->
+	</main>
+	<!-- /.services -->
+
+	<section class="redesign" id="redesign">
+		<div class="container">
+			<div class="redesign__header">
+				<div class="redesign__header-img wow fadeInLeftBig">
+					<img src="img/redesign-img.png" alt=""/>
+				</div>
+				<div class="redesign__header-content wow fadeInRightBig">
+					<h3 class="redesign__content-title">Редизайн сайта</h3>
+					<p class="redesign__content-text">Никому не нравятся старые, не красивые сайты, поэтому вам нужен свежий дизайн, чтобы поразить ваших будущих клиентов.</p>
+					<a href="#" class="redesign__content-btn">подробнее</a>
+				</div>
+			</div>
+			<!-- /.redesign__header -->
+			<h3 class="redesign__title wow fadeInUp">оптимизированный/современный сайт - это:</h3>
+			<div class="redesign__body">
+				<div class="redesign__body-item wow fadeInLeftBig">
+					<img src="img/redesign-icon-01.svg" alt="" class="redesign__item-icon" />
+					<p class="redesign__item-text">больше клиентов</p>
+				</div>
+				<div class="redesign__body-item wow fadeInLeftBig">
+					<img src="img/redesign-icon-02.svg" alt="" class="redesign__item-icon" />
+					<p class="redesign__item-text">повышение  рейтинга сайта, а значит увеличение доверия</p>
+				</div>
+				<div class="redesign__body-item wow fadeInRightBig">
+					<img src="img/redesign-icon-03.svg" alt="" class="redesign__item-icon" />
+					<p class="redesign__item-text">больше заказов - больше  прибыли</p>
+				</div>
+				<div class="redesign__body-item wow fadeInRightBig">
+					<img src="img/redesign-icon-04.svg" alt="" class="redesign__item-icon" />
+					<p class="redesign__item-text">увеличение скорости работы</p>
+				</div>
+			</div>
+			<!-- /.redesign__body -->
+			<a href="#" class="redesign__btn btn" data-scroll="#form">Заказать редизайн сайта</a>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.redesign -->
+
+	<section class="responsive">
+		<div class="container">
+			<div class="responsive__wrapper">
+				<img src="img/responsive-icon.svg" alt="" class="responsive__icon" />
+				<h3 class="responsive__title wow fadeInUp" data-wow-offset="150">Мы сделаем ваш сайт <br /> адаптивным для работы с различными устройствами</h3>
+			</div>
+			<!-- /.responsive__wrapper -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.responsive -->
+
+	<section class="about">
+		<div class="container">
+			<h3 class="about__title wow fadeInUp" data-wow-offset="150">две модели работы</h3>
+			<!-- /.about__title -->
+			<div class="about__inner">
+				<div class="about__item about__item--line wow fadeInLeft">
+					<div class="about__item-content about__item-content--line">
+						<img src="img/about-icon-01.svg" alt="" class="about__content-icon" />
+						<h4 class="about__content-title">разработка сайта  под ключ</h4>
+						<p class="about__content-text">Мы забронируем время для вашего проекта Вы связываетесь с нашим менеджером по работе с клиентами Мы подписываем NDA Модели фиксированной цены или времени и материала оплаты</p>
+					</div>
+					<!-- /.about__item-content -->
+					<a href="#" class="about__item-btn" data-scroll="#form">подробней</a>
+				</div>
+				<!-- /.about__item -->
+				<div class="about__item wow fadeInRight">
+					<div class="about__item-content">
+						<img src="img/about-icon-02.svg" alt="" class="about__content-icon" />
+						<h4 class="about__content-title">поддержка и сайт на нашем сервере</h4>
+						<p class="about__content-text">Мы забронируем время для вашего проекта Вы связываетесь с нашим менеджером по работе с клиентами Мы подписываем NDA Модели фиксированной цены или времени и материала оплаты</p>
+					</div>
+					<!-- /.about__item-content -->
+					<a href="#" class="about__item-btn" data-scroll="#works">подробней</a>
+				</div>
+				<!-- /.about__item -->
+			</div>
+			<!-- /.about__inner -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.about -->
+
+	<section class="works" id="works">
+		<h3 class="works__title wow fadeInUp" data-wow-offset="150">制作実績</h3>
+		<div class="works__inner">
+			<div class="works__item">
+				<div class="works__item-img">
+					<img src="img/work-01.png" alt="" />
+				</div>
+				<div class="works__item-content">
+					<a href="img/work-01-big.png" class="works__content-link" data-lightbox="mygallery">посмотреть полностью</a>
+				</div>
+			</div>
+			<!-- /.works__item -->
+			<div class="works__item">
+				<div class="works__item-img">
+					<img src="img/work-02.png" alt="" />
+				</div>
+				<div class="works__item-content">
+					<a href="img/work-02-big.png" class="works__content-link" data-lightbox="mygallery">посмотреть полностью</a>
+				</div>
+			</div>
+			<!-- /.works__item -->
+			<div class="works__item">
+				<div class="works__item-img">
+					<img src="img/work-03.png" alt="" />
+				</div>
+				<div class="works__item-content">
+					<a href="img/work-03-big.png" class="works__content-link" data-lightbox="mygallery">посмотреть полностью</a>
+				</div>
+			</div>
+			<!-- /.works__item -->
+			<div class="works__item">
+				<div class="works__item-img">
+					<img src="img/work-04.png" alt="" />
+				</div>
+				<div class="works__item-content">
+					<a href="img/work-04-big.png" class="works__content-link" data-lightbox="mygallery">посмотреть полностью</a>
+				</div>
+			</div>
+			<!-- /.works__item -->
+			<div class="works__item">
+				<div class="works__item-img">
+					<img src="img/work-05.png" alt="" />
+				</div>
+				<div class="works__item-content">
+					<a href="img/work-05-big.png" class="works__content-link" data-lightbox="mygallery">посмотреть полностью</a>
+				</div>
+			</div>
+			<!-- /.works__item -->
+			<div class="works__item">
+				<div class="works__item-img">
+					<img src="img/work-06.png" alt="" />
+				</div>
+				<div class="works__item-content">
+					<a href="img/work-06-big.png" class="works__content-link" data-lightbox="mygallery">посмотреть полностью</a>
+				</div>
+			</div>
+			<!-- /.works__item -->
+		</div>
+		<!-- /.works__inner -->
+	</section>
+	<!-- /.works -->
+
+	<section class="form" id="form">
+		<div class="form__container">
+			<h3 class="form__title wow fadeInUp" data-wow-offset="150">ご相談・お問い合わせフォーム</h3>
+			<!-- /.form__title -->
+			<h4 class="form__subtitle wow fadeInUp">必要事項を記入の上送信してください。 お問い合わせ後、二営業日以内に折り返しご連絡させていただきます</h4>
+			<!-- /.form__subtitle -->
+			<form action="" class="form__inner">
+				<div class="form__item">
+					<label for="nameCompany" class="form__item-label">会社名<span>*</span></label>
+					<input type="text" name="nameCompany" class="form__item-input" />
+				</div>
+				<div class="form__item">
+					<label for="name" class="form__item-label">担当者名<span>*</span></label>
+					<input type="text" name="name" class="form__item-input" />
+				</div>
+				<div class="form__item">
+					<label for="address" class="form__item-label">ご住所<span>*</span></label>
+					<input type="text" name="address" class="form__item-input" />
+				</div>
+				<div class="form__item">
+					<label for="name" class="form__item-label">電話番号<span>*</span></label>
+					<input type="text" name="name" class="form__item-input" />
+				</div>
+				<div class="form__item">
+					<label for="phone" class="form__item-label">メールアドレス<span>*</span></label>
+					<input type="tel" name="phone" class="form__item-input" />
+				</div>
+				<div class="form__item">
+					<label for="message" class="form__item-label">お問い合わせ内容<span>*</span></label>
+					<textarea name="message" id="" cols="30" rows="10" class="form__item-textarea"></textarea>
+				</div>
+				<button type="submit" class="form__btn">送信する</button>
+			</form>
+			<!-- /.form__inner -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.form -->
+
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="footer__top-inner">
+					<div class="footer__item">
+						<h5 class="footer__item-title">izumi it company on</h5>
+						<p class="footer__item-text">エストニア国、ハリュ郡 タリン, 中央地区, カウプメへ7-120, 10114</p>
+					</div>
+					<!-- /.footer__item -->
+					<div class="footer__item footer__item--flex">
+						<a href="#" class="footer__item-btn">個人情報保護方針</a>
+						<a href="#" class="footer__item-icon">
+							<svg>
+								<use xlink:href="#facebook"></use>
+							</svg>
+						</a>
+					</div>
+					<!-- /.footer__item -->
+				</div>
+				<!-- /.footer__top-inner -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.footer__top -->
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__bottom-inner">
+					<div class="footer__bottom-wrapper">
+						<div class="footer__col">
+							<div class="footer__content">
+								<a href="#" class="footer__content-link">
+									<svg>
+										<use xlink:href="#skype"></use>
+									</svg>
+									izymiinka
+								</a>
+							</div>
+							<!-- /.footer__content -->
+							<div class="footer__content">
+								<a href="#" class="footer__content-link">
+									<svg>
+										<use xlink:href="#mail"></use>
+									</svg>
+									izumi@izumi-it-company.com
+								</a>
+							</div>
+							<!-- /.footer__content -->
+						</div>
+						<!-- /.footer__col -->
+						<div class="footer__col">
+							<div class="footer__content">
+								<a href="#" class="footer__content-link">
+									<svg>
+										<use xlink:href="#footer-icon-01"></use>
+									</svg>
+									izumi_itcompany
+								</a>
+							</div>
+							<!-- /.footer__content -->
+							<div class="footer__content">
+								<a href="#" class="footer__content-link">
+									<svg>
+										<use xlink:href="#footer-icon-02"></use>
+									</svg>
+									izumi_itcompany
+								</a>
+							</div>
+							<!-- /.footer__content -->
+						</div>
+						<!-- /.footer__col -->
+					</div>
+					<!-- /.footer__bottom-wrapper -->
+					<ul class="footer__menu">
+						<div class="footer__menu-col">
+							<li><a href="#" class="footer__menu-link">главная</a></li>
+							<li><a href="#" class="footer__menu-link">аутсорсинг</a></li>
+							<li><a href="#" class="footer__menu-link">разработка сайта</a></li>
+						</div>
+						<div class="footer__menu-col">
+							<li><a href="#" class="footer__menu-link">приложения</a></li>
+							<li><a href="#" class="footer__menu-link">sitemover</a></li>
+							<li><a href="#" class="footer__menu-link">портфолио</a></li>
+						</div>
+						<div class="footer__menu-col">
+							<li><a href="#" class="footer__menu-link">о нас</a></li>
+							<li><a href="#" class="footer__menu-link">контакты</a></li>
+						</div>
+					</ul>
+					<!-- /.footer__menu -->
+				</div>
+				<!-- /.footer__bottom-inner -->
+			</div>
+			<!-- /.container -->
+			<span class="footer__copyright">Copyright @ Izumi IT Company 2019</span>
+		</div>
+		<!-- /.footer__bottom -->
+	</footer>
+	<!-- /.footer -->
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
